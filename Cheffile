@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site 'https://supermarket.getchef.com/api/v1'
+
+cookbook 'mysql', '5.6.1'
+cookbook 'php'
+cookbook 'zeromq'
+cookbook 'git'

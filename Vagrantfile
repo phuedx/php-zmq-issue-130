@@ -9,10 +9,8 @@ Vagrant.configure(2) do |config|
   end
 
   config.vm.provision "chef_solo" do |chef|
-    chef.cookbooks_path = "cookbooks"
-    chef.add_recipe "php"
-    chef.add_recipe "zeromq"
-    chef.add_recipe "git"
+    chef.cookbooks_path = ["cookbooks", "project-cookbooks"]
+    chef.add_recipe "php-zmq-issue-130"
     chef.json = {
       "php" => {
         "install_method" => "source",

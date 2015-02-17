@@ -20,4 +20,8 @@ cd .. # cd php-zmq
 sudo pecl install ev
 sudo echo "extension=ev.so" >> `php --ini | grep "Loaded Configuration" | sed -e "s|.*:\s*||"`
 
+# Install pthreads extension
+sudo pecl install pthreads
+sudo echo "extension=pthreads.so" >> `php --ini | grep "Loaded Configuration" | sed -e "s|.*:\s*||"`
+
 popd # pushd /tmp

@@ -1,0 +1,11 @@
+name             'php-zmq-issue-130'
+maintainer       'YOUR_NAME'
+maintainer_email 'YOUR_EMAIL'
+license          'All rights reserved'
+description      'Installs/Configures php-zmq-issue-130'
+long_description 'Installs/Configures php-zmq-issue-130'
+version          '0.1.0'
+
+depends 'php'
+depends 'zeromq'
+depends 'git'
